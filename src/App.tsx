@@ -10,16 +10,33 @@ import { Footer } from './Footer';
 interface ComponentProps {
 }
 
-export class App extends React.Component<ComponentProps, {}> {
-    /*constructor(props, context) {
+interface ComponentState {
+    targetX: number,
+    targetY: number
+}
+
+export class App extends React.Component<ComponentProps, ComponentState> {
+    constructor(props, context) {
         super(props, context);
-    }*/
+        this.state = {
+            targetX: 0,
+            targetY: 0
+        };
+    }
+    onMouseMove(e) {
+        const canvasBox = e.target.getBoundingClientRect();
+
+        this.setState({
+            targetX: e.clientX - canvasBox.left,
+            targetY: e.clientY - canvasBox.top
+        });
+    }
     render() {
         return (
             <div className="window">
                 <TitleBar/>
-                <Canvas/>
-                <Footer/>
+                <Canvas onmousemove={this.onMouseMove.bind(this)}/>
+                <Footer targetX={this.state.targetX} targetY={this.state.targetY}/>
             </div>
         );
     }

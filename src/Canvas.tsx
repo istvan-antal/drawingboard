@@ -1,10 +1,9 @@
 import React = require('react');
 
-export class Canvas extends React.Component<{}, {}> {
+export class Canvas extends React.Component<{ onmousemove: any }, {}> {
     render() {
         return (
-            <div className="window-content">
-                Hello
+            <div onMouseMove={this.props.onmousemove} className="window-content">
             </div>
         );
     }
