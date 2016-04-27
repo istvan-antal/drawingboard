@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "sourceMap": true,
+        "jsx": "react"
+    },
+    "filesGlob": [
+        "main.ts",
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ],
+    "files": [
+        "main.ts",
+        "src/init.tsx"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}
