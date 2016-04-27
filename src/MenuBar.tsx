@@ -4,7 +4,7 @@ interface ComponentState {
     activeItem: string
 }
 
-export class TitleBar extends React.Component<{}, ComponentState> {
+export class MenuBar extends React.Component<{}, ComponentState> {
     private items = [
         { name: 'select', icon: 'mouse' },
         { name: 'rect', icon: 'cloud' }

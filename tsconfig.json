@@ -16,7 +16,7 @@
         "src/Canvas.tsx",
         "src/Footer.tsx",
         "src/init.tsx",
-        "src/TitleBar.tsx"
+        "src/MenuBar.tsx"
     ],
     "atom": {
         "rewriteTsconfig": true

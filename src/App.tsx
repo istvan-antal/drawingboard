@@ -3,7 +3,7 @@ import React = require('react');
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';*/
 
-import { TitleBar } from './TitleBar';
+import { MenuBar } from './MenuBar';
 import { Canvas } from './Canvas';
 import { Footer } from './Footer';
 
@@ -34,7 +34,7 @@ export class App extends React.Component<ComponentProps, ComponentState> {
     render() {
         return (
             <div className="window">
-                <TitleBar/>
+                <MenuBar/>
                 <Canvas onmousemove={this.onMouseMove.bind(this)}  targetX={this.state.targetX} targetY={this.state.targetY}/>
                 <Footer targetX={this.state.targetX} targetY={this.state.targetY}/>
             </div>
