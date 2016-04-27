@@ -12,6 +12,7 @@
     ],
     "files": [
         "main.ts",
+        "src/App.tsx",
         "src/init.tsx"
     ],
     "atom": {

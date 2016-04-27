@@ -8,9 +8,14 @@ import { Provider } from 'react-redux';
 
 /*import configureStore from './configureStore';
 const store = configureStore();
+*/
+import { App } from './App';
 
-import App = require('./App');
-
+render(
+    <App/>,
+    document.getElementById('app')
+);
+/*
 render(
     <Provider store={store}>
         <App {...store.getState()}/>
