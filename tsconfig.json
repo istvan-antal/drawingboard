@@ -13,7 +13,10 @@
     "files": [
         "main.ts",
         "src/App.tsx",
-        "src/init.tsx"
+        "src/Canvas.tsx",
+        "src/Footer.tsx",
+        "src/init.tsx",
+        "src/TitleBar.tsx"
     ],
     "atom": {
         "rewriteTsconfig": true
