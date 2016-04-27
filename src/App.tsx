@@ -35,7 +35,7 @@ export class App extends React.Component<ComponentProps, ComponentState> {
         return (
             <div className="window">
                 <TitleBar/>
-                <Canvas onmousemove={this.onMouseMove.bind(this)}/>
+                <Canvas onmousemove={this.onMouseMove.bind(this)}  targetX={this.state.targetX} targetY={this.state.targetY}/>
                 <Footer targetX={this.state.targetX} targetY={this.state.targetY}/>
             </div>
         );
